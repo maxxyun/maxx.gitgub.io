@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #empty {
+            margin-top: 50px;
+            margin-bottom: 100px;
+/*            border: 1px solid tomato;*/
+        }
+
+        #normal {
+            background-color: powderblue;
+            margin-top:100px;
+        }
+/*        empty와 normal의 마진 100이 겹친다. 한쪽이 100보다 커진다면 그 값으로 된다.*/
+/*        시각적 요소가 없다면 위와 아래 중에 더 큰 값을 마진값으로 가진다*/
+    </style>
+</head>
+
+<body>
+    <div id="empty"></div>
+    <div id="normal">normal</div>
+</body>
+</html>

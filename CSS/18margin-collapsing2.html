@@ -1,9 +1,23 @@
 <! doctype html>
 <html>
     <head>
-    
+    <style>
+        #parent{
+/*            border:1px solid tomato;*/
+            margin-top:100px;
+        }
+        #child{
+            background-color:powderblue;
+            margin-top:50px;
+        }
+        </style>
+<!--        부모가 투명하고 부모 엘리먼트의 마진값과 자식 엘리먼트의 마진값이 서로 비교했을때 큰쪽의 마진값을 사용-->
     </head>
     <body>
-    
+    <div id="parent">
+        <div id="child">
+            Hello world
+        </div>
+    </div>
     </body>
 </html>
