@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+    #parent, #other, #grand {
+        border:5px solid tomato;
+    }
+    #grand{
+        position: relative;
+    }
+/*
+    #parent{
+        position: relative;
+    }
+*/
+    #me{
+     background-color: black;
+        color: white;
+        position: absolute;/* relative는 부모를 기준으로 위치, absolute는 parent에 아무 포지션 타입도 지정이 없어서 grand의 값을 기준으로 위치를 잡는다 */
+/*        width: 200px;*/
+        left: 0px;
+        top:0px;
+    }
+    </style>
+</head>
+<body>
+    <div id="other">other</div>
+    <div id="grand">grand
+    <div id="parent">
+       parent
+        <div id="me">me</div>
+    </div>
+    </div>
+</body>
+</html>
