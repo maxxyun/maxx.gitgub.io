@@ -1,0 +1,28 @@
+<! doctype html>
+<html>
+    <head>
+    <style>
+        .container{
+            background-color: powderblue;
+            height: 200px;
+            display: flex;        /*<------부모에게 반드시 디스플레이값을 flex로 준다.*/
+            flex-direction: column;
+            /*row가 기본값, row-reverse는 반대 방향 정렬. column기본값, column-reverse는 반대 숫자로 정렬*/
+        }
+        .item{
+            background-color: tomato;
+            color:white;
+            border: 1px solid white;
+        }
+        </style>
+    </head>
+    <body>
+    <div class="container">                      <!--    .container 단축키  -->
+        <div class="item">1</div>                <!--    .item{$}*5 단축키  -->
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    </body>
+</html>

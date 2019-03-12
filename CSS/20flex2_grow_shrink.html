@@ -1,0 +1,39 @@
+<! doctype html>
+<html>
+    <head>
+    <style>
+        .container{
+            background-color: powderblue;
+            height: 200px;
+            display: flex;        /*<------부모에게 반드시 디스플레이값을 flex로 준다.*/
+            flex-direction: row;
+            /*row가 기본값, row-reverse는 반대 방향 정렬. column기본값, column-reverse는 반대 숫자로 정렬*/
+        }
+        .item{
+            background-color: tomato;
+            color:white;
+            border: 1px solid white;
+/*            flex-grow: 1;  container의 여백을 5개의 item이 공평하게 나눠 갖는다*/
+        }
+        .item:nth-child(1){
+            flex-basis: 500px;
+            flex-shrink: 1;  /*item1에 shrink 1을 주고 item2에 shrink 2를 주면 2가 1보다 두배 더 줄어든다*/
+        }
+        .item:nth-child(2){
+            flex-basis: 500px;
+            flex-shrink: 2;     /*줄어들때 0으로 주면 함께 줄어들지 않음, 1로 주면 함께 줄어든다*/
+/*            flex-grow: 2;   두번째 item만 다른것의 2배인 2를 가져간다.*/
+/*            flex-basis: 200px;  플럭스 방향에 대한 엘리먼트 크기*/
+        }
+        </style>
+    </head>
+    <body>
+    <div class="container">                      <!--    .container 단축키  -->
+        <div class="item">1</div>                <!--    .item{$}*5 단축키  -->
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+    </body>
+</html>
