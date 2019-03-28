@@ -1,0 +1,86 @@
+<!DOCTYPE>
+<html>
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+        }
+
+        header {
+            border-bottom: 1px solid gray;
+            padding-left: 20px;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding-right: 20px;
+            text-align: center;
+        }
+        .content {
+            display: flex;
+/*            flex-direction:column;*/
+        }
+        .content nav {
+            border-right: 1px solid gray;
+        }
+        .content aside {
+            border-left: 1px solid gray;
+        }
+        @media (max-width:500px){   /*미디어 쿼리 최대 500일때 = 500이하일때 방향은 colum으로 하고, nav와 aside의 옆에 선 없고, basis크기는 오토로, 순서는 main, nav, aside 순인데 aside는 없애고. https://www.w3schools.com/cssref/css3_pr_mediaquery.asp 더 많은 미디어 쿼리 룰 링크 참고 */
+            .content {
+            flex-direction:column;
+            }
+            .content nav, .content aside{
+                border: none;
+                flex-basis: auto;
+            }
+            main{
+                order: 0;
+            }
+            nav{
+                order: 1;
+            }
+            aside{
+                order: 2;
+                display: none;
+            }
+        }
+        nav,
+        aside {
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+
+        main {
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+                <ul>
+                    <li>html</li>
+                    <li>css</li>
+                    <li>javascript</li>
+                </ul>
+            </nav>
+            <main>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim odit, quidem? Magnam id numquam repellat delectus cupiditate vel dolorem natus minus blanditiis recusandae omnis ipsam odio labore tempora tempore odit aliquam cumque dolor explicabo, quam consequuntur laudantium deleniti? Suscipit, facere corporis rerum quisquam quia, distinctio cupiditate molestiae perferendis autem doloribus ratione ullam. Consequuntur inventore eveniet iure qui, nostrum accusantium et autem ad soluta explicabo. Blanditiis, alias, praesentium eligendi a quos vel aspernatur omnis dolor nihil inventore illo quis, sequi, voluptas reprehenderit nostrum. Cumque eligendi ducimus architecto alias quidem, ab similique aperiam placeat, qui in sint ratione praesentium expedita facere a.
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="http://opentutorials.org">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

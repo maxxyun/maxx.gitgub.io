@@ -1,0 +1,28 @@
+<! doctype html>
+<html>
+    <head>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!--메타테크 필요-->
+    <style>
+        @media (max-width:600px){   /*max-width : 최대 600픽셀 일때 => 600픽셀 이하일때*/
+            body{
+                background-color: green;
+            }
+        }
+        @media (max-width:500px){   /*나중에 나오는 코드가 우선*/
+            body{
+                background-color: red;
+            }
+        }
+        @media (min-width:601px){
+            body{
+                background-color: blue;
+            }
+        }
+        </style>
+    </head>
+    <body>
+    ~500px : red
+    501~600px : green
+    601px : blue
+    </body>
+</html>
