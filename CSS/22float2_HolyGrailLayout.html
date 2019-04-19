@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<!--flex 말고 float로 성배 만들기-->
+<html>
+<head>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .container{
+            width:540px;
+            border:1px solid gray;
+            margin:auto;
+        }
+        header {
+            border-bottom: 1px solid gray;
+        }
+
+        nav {
+            float: left;
+            width: 120px;
+            border-right: 1px solid gray;
+        }
+
+        article {
+            float: left;
+            width: 300px;
+            border-left: 1px solid gray;
+            border-right: 1px solid gray;
+            margin-left: -1px;
+        }
+
+        aside {
+            float: left;
+            width: 120px;
+            border-left: 1px solid gray;
+            margin-left: -1px;
+        }
+        footer{
+            clear:both;
+            border-top: 1px solid gray;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container">
+    <header>
+        <h1>
+            CSS
+        </h1>
+    </header>
+    <nav>
+        <ul>
+            <li>position</li>
+            <li>float</li>
+            <li>flex</li>
+        </ul>
+    </nav>
+    <article>
+        <h2>float</h2>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate, suscipit eaque eius voluptatum nobis commodi autem quis error adipisci ipsa, reiciendis porro iste. Distinctio dolorem dolore ipsam magnam vero id quos laborum deserunt impedit recusandae inventore libero ipsum, quasi autem nisi nihil aut incidunt neque asperiores. Pariatur laboriosam molestiae excepturi.
+    </article>
+    <aside>
+        ad
+    </aside>
+    <footer>
+        copyleft
+    </footer>
+   </div>
+</body></html>
