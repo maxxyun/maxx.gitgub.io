@@ -1,0 +1,18 @@
+jupyter notebook 쓰다가 알게된 팁이있다
+
+자체적으로 내가 작성한 ipynb file을 import 하고 싶을 때가 있는데
+
+일일히 파이썬파일로 변경 후 load했는데 더 간단한 방법이 있었다.
+
+
+1. import_ipynb 모듈설치
+
+2. import import_ipynb
+
+
+import import_ipynb
+import LoadCIFARData
+>>> importing Jupyter notebook from LoadCIFARData.ipynb
+
+
+위 코드의 결과는 내가 작성한 LoadCIFARData.ipynb 를 load한다!  끝 
