@@ -1,0 +1,7 @@
+setwd("C:\Users\Maxx\Desktop\review_anova.csv")
+library(foreign)
+data = read.spss(file='onewayANOVA.sav', use.value.labels = T, use.missings = T, to.data.frame = T)
+attach(data)
+gr = factor(CHL1)
+base1 = lm(DBP ~ gr)
+anova(base1)
